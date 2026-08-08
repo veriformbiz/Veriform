@@ -69,3 +69,18 @@
 @utility eyebrow {
   @apply text-xs font-semibold uppercase tracking-[0.2em] text-primary;
 }
+
+.hero-atmosphere {
+  background:
+    radial-gradient(circle at 82% 24%, color-mix(in oklab, var(--primary) 24%, transparent) 0%, transparent 34%),
+    radial-gradient(circle at 18% 85%, color-mix(in oklab, var(--primary) 10%, transparent) 0%, transparent 38%),
+    linear-gradient(125deg, oklch(0.1 0.028 258) 0%, var(--ink) 42%, oklch(0.16 0.055 255) 100%);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--on-ink) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--on-ink) 7%, transparent) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, transparent, black 18%, black 78%, transparent);
+}
