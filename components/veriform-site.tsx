@@ -50,7 +50,7 @@ function Logo({ compact = false }: { compact?: boolean }) {
 }
 
 function Nav({ onClose }: { onClose?: () => void }) {
-  const links = [['Home', '#top'], ['About Us', '#about'], ['Services', '#services'], ['Industries', '#industries'], ['Why VeriForm', '#why-us'], ['FAQs', '#faqs']] as const
+  const links = [['Home', '/'], ['About Us', '/about'], ['Services', '/services'], ['Products', '/products'], ['Industries', '/industries'], ['Why VeriForm', '/why-veriform'], ['FAQs', '/faqs']] as const
   return <nav className="flex flex-col gap-5 md:flex-row md:items-center md:gap-7" aria-label="Primary navigation">{links.map(([label, href]) => <a key={href} href={href} onClick={onClose} className="text-sm font-medium text-on-ink/70 transition-colors hover:text-on-ink">{label}</a>)}</nav>
 }
 
